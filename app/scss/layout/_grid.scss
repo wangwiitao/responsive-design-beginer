@@ -1,3 +1,4 @@
+@use "../util" as u;
 .grid {
   display: grid;
   grid-template-columns: 1fr;
@@ -7,7 +8,11 @@
   width: min(100% - 40px, 1000px);
   margin-inline: auto;
 
-  @media (min-width: 900px) {
+  //   @media (min-width: 900px) {
+  //     grid-template-columns: 2fr 1fr;
+  //     grid-template-rows: auto;
+  //   }
+  @include u.breakpoint(large) {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: auto;
   }
@@ -21,5 +26,9 @@
   }
   &__sidebar {
     background-color: hsl(300, 100%, 30%);
+    text-align: center;
+    @include u.breakpoint(large) {
+      text-align: left;
+    }
   }
 }
