@@ -17,11 +17,27 @@ body {
   color: var(--text-color);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   font-weight: 700;
   line-height: 1.1;
   margin-top: 0;
   margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: 28px;
+}
+@media (min-width: 43.75em) {
+  h1 {
+    font-size: 36px;
+  }
+}
+@media (min-width: 56.25em) {
+  h1 {
+    font-size: 42px;
+  }
 }
 
 p {
@@ -59,12 +75,26 @@ a:active {
 .grid__main {
   background-color: hsl(240, 99%, 33%);
 }
-.grid__sidebar {
-  background-color: hsl(300, 100%, 30%);
-  text-align: center;
+@media (min-width: 43.75em) {
+  .grid__main {
+    background-color: hsl(120, 100%, 16%);
+  }
 }
 @media (min-width: 56.25em) {
+  .grid__main {
+    background-color: hsl(39, 100%, 35%);
+  }
+}
+.grid__sidebar {
+  background-color: hsl(300, 100%, 30%);
+}
+@media (max-width: 56.24875em) {
   .grid__sidebar {
-    text-align: left;
+    text-align: center;
+  }
+}
+@media (max-width: 43.7485em) {
+  .grid__sidebar {
+    text-align: right;
   }
 }/*# sourceMappingURL=style.css.map */
