@@ -42,12 +42,5 @@
   }
   &__widget {
     padding: u.rem(16);
-    &--magenta {
-      background-color: hsl(300, 100%, 30%);
-    }
-
-    &--green {
-      background-color: hsl(120, 100%, 27%);
-    }
   }
 }
