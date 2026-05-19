@@ -1,14 +1,27 @@
 :root {
-  --main-bg: hsl(0, 0%, 100%);
-  --text-dark: hsl(233, 14%, 25%);
-  --text-light: hsl(0, 0%, 100%);
-  --hero-bg: hsl(232, 58%, 55%);
-  --button-primary-bg: hsl(180, 100%, 42%);
-  --button-primary-text: hsl(233, 14%, 25%);
+  --main-bg: hsla(0, 0%, 100%, 1);
+  --text-dark: hsla(233, 14%, 25%, 1);
+  --text-light: hsla(0, 0%, 100%, 1);
+  --hero-bg: hsla(232, 58%, 55%, 1);
+  --button-primary-bg: hsla(180, 100%, 42%, 1);
+  --button-primary-text: hsla(233, 14%, 25%, 1);
   --button-secondary-bg: transparent;
-  --button-secondary-border: hsl(0, 0%, 100%);
-  --button-secondary-text: hsl(0, 0%, 100%);
-  --fullwidth-bg: hsl(320, 85%, 41%);
+  --button-secondary-border: hsla(0, 0%, 100%, 1);
+  --button-secondary-text: hsla(0, 0%, 100%, 1);
+  --button-cta-bg: hsla(0, 0%, 100%, 1);
+  --button-cta-text: hsla(0, 0%, 100%, 1);
+  --fullwidth-bg: hsla(320, 85%, 41%, 1);
+  --cta-desktop: (
+    linear-gradient(90deg, hsla(233, 14%, 25%, 1)) 0%,
+    hsla(232, 58%, 55%, 1) 56.34%,
+    hsla(180, 100%, 42%, 1) 112.47%
+  );
+  --cta-mobile: linear-gradient(
+    90deg,
+    hsla(233, 14%, 25%, 1) 0%,
+    hsla(232, 58%, 55%, 1) 76.28%,
+    hsla(180, 100%, 42%, 1) 152.28%
+  );
 }
 
 .magenta {
